@@ -1,4 +1,4 @@
-/* Estilo geral */
+/*geral */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,7 +6,7 @@ body {
     background-color: #f9f9f9;
 }
 
-/* Estilo para seções */
+/*seções */
 section {
     width: 80%;
     margin: 20px auto;
@@ -16,7 +16,7 @@ section {
     border-radius: 8px;
 }
 
-/* Estilo para a tabela */
+/* tabela */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -34,12 +34,11 @@ table tr:hover {
     background-color: #e0f7f4;
 }
 
-/* Textos e imagens centralizados */
 h1, h2, p {
     text-align: center;
 }
 
-/* Lista de melhores hábitos */
+
 ul {
     list-style: none;
     padding: 0;
@@ -49,7 +48,7 @@ ul li {
     padding: 5px 0;
 }
 
-/* Barra de navegação */
+/* barra de navegação */
 nav {
     background-color: #2a9d8f;
     padding: 10px 0;
@@ -73,14 +72,14 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Estilo para a imagem do brasão */
+/* brasão */
 .logo {
     display: block;
     margin: 0 auto;
     width: 150px;
 }
 
-/* Formulário de IMC */
+/* formulário de IMC */
 #calculadora {
     max-width: 600px;
     margin: 40px auto;
@@ -145,26 +144,25 @@ nav ul li a:hover {
 /* Centraliza a div contendo a imagem */
 #figura-imc {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    flex-direction: column; /* Alinha os elementos verticalmente (se houver mais de um) */
-    margin: 20px 0; /* Espaçamento vertical */
-    text-align: center; /* Alinha o texto dentro da div */
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    margin: 20px 0; 
+    text-align: center; 
 }
 
-/* Torna a imagem responsiva e com tamanho maior */
 .imagem-imc {
-    max-width: 80%; /* A imagem ocupará no máximo 80% da largura do contêiner pai */
-    min-width: 300px; /* Define um tamanho mínimo para que a imagem seja legível */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 10px; /* Bordas arredondadas (opcional) */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave (opcional) */
+    max-width: 80%; 
+    min-width: 300px; 
+    height: auto;
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
-/* Espaçamento adicional para o texto */
+
 #resultado {
     margin-bottom: 20px; /* Espaço entre o texto e a imagem */
-    font-size: 1.2rem; /* Aumenta o tamanho da fonte do texto */
+    font-size: 1.2rem; 
 }
 
 .image-container {
@@ -181,10 +179,10 @@ nav ul li a:hover {
 }
 
 .image-box img {
-    width: 100%; /* Garante que a imagem se ajuste ao tamanho do contêiner */
-    height: 200px; /* Define uma altura fixa para padronizar as imagens */
-    object-fit: cover; /* Garante que a imagem seja cortada proporcionalmente */
-    border-radius: 10px; /* Bordas arredondadas */
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 10px; 
 }
 
 .image-box p {
@@ -195,7 +193,7 @@ nav ul li a:hover {
 
 /* Rodapé */
 footer {
-    background-color: #5bb3ac; /* Cor de fundo */
+    background-color: #5bb3ac; 
     color: white;
     padding: 20px 10px;
     font-family: Arial, sans-serif;
@@ -217,7 +215,7 @@ footer {
 }
 
 .footer-logo {
-    width: 120px; /* Ajuste do tamanho da logo */
+    width: 120px; 
     margin-bottom: 10px;
 }
 
@@ -236,16 +234,16 @@ footer {
 }
 
 .social-icons a img {
-    width: 40px; /* Define largura fixa */
-    height: 40px; /* Define altura fixa */
+    width: 40px; 
+    height: 40px; 
     margin: 0 10px;
-    object-fit: contain; /* Garante que as proporções sejam mantidas */
-    border-radius: 50%; /* Deixa os ícones circulares (se necessário) */
+    object-fit: contain; 
+    border-radius: 50%; 
     transition: transform 0.3s ease;
 }
 
 .social-icons a img:hover {
-    transform: scale(1.1); /* Efeito ao passar o mouse */
+    transform: scale(1.1);
 }
 
 .footer-bottom {
