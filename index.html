@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="./img/Logofortaleza.png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculadora de IMC</title>
+</head>
+<body>
+    <!-- Barra de Navegação -->
+    <nav>
+        <img src="img/Logofortaleza.png" alt="Brasão de Fortaleza" class="logo">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#habitos">Bons Hábitos Alimentares</a></li>
+            <li><a href="#calculadora">Calculadora de IMC</a></li>
+            <li><a href="#footer">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Seção Bons Hábitos Alimentares -->
+<section id="habitos">
+    <h1>Bons Hábitos Alimentares</h1>
+    <p>
+        Adotar bons hábitos alimentares é fundamental para uma vida saudável. Inclua mais frutas, verduras e alimentos naturais na sua dieta e evite alimentos ultraprocessados. Lembre-se, uma alimentação equilibrada é a base para mais energia, disposição e qualidade de vida.
+    </p>
+
+    <h2>Melhores Hábitos Alimentares:</h2>
+    <ul>
+        <li>🍎 Coma frutas, verduras e legumes diariamente.</li>
+        <li>💧 Beba bastante água ao longo do dia.</li>
+        <li>🌾 Prefira alimentos integrais em vez de refinados.</li>
+        <li>🍗 Inclua proteínas magras como peixes, frango e ovos.</li>
+        <li>❌ Evite frituras e alimentos ultraprocessados.</li>
+        <li>⏰ Mantenha horários regulares para suas refeições.</li>
+        <li>🏃 Pratique atividades físicas regularmente.</li>
+    </ul>
+
+    <div class="image-container">
+        <div class="image-box">
+            <img src="./img/Frutas-frescas.png" alt="Frutas frescas">
+            <p>Frutas frescas</p>
+        </div>
+        <div class="image-box">
+            <img src="./img/verduras.png" alt="Legumes e verduras">
+            <p>Legumes e verduras</p>
+        </div>
+        <div class="image-box">
+            <img src="./img/fontes-de-proteinas.jpg" alt="Proteínas magras">
+            <p>Proteínas magras</p>
+        </div>
+    </div>
+
+    <h2>Alimentos Essenciais:</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Alimento</th>
+                <th>Benefício</th>
+                <th>Porção Diária</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Frutas</td>
+                <td>Ricas em vitaminas, minerais e fibras.</td>
+                <td>3 a 5 porções</td>
+            </tr>
+            <tr>
+                <td>Legumes e Verduras</td>
+                <td>Fonte de fibras, vitaminas e antioxidantes.</td>
+                <td>2 a 4 porções</td>
+            </tr>
+            <tr>
+                <td>Proteínas Magras</td>
+                <td>Importante para o crescimento e reparação dos tecidos.</td>
+                <td>2 a 3 porções</td>
+            </tr>
+            <tr>
+                <td>Cereais Integrais</td>
+                <td>Fonte de energia e fibras.</td>
+                <td>6 a 8 porções</td>
+            </tr>
+            <tr>
+                <td>Oleaginosas</td>
+                <td>Ricas em gorduras boas e antioxidantes.</td>
+                <td>1 a 2 porções</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+
+    <!-- Seção Calculadora de IMC -->
+    <section id="calculadora">
+        <h2>Calculadora de IMC</h2>
+        <form id="imcForm">
+            <div class="form-group">
+                <label for="peso">Peso (kg):</label>
+                <input type="number" id="peso" required>
+            </div>
+            <div class="form-group">
+                <label for="altura">Altura (m):</label>
+                <input type="number" step="0.01" id="altura" required>
+            </div>
+            <div class="form-group">
+                <label for="genero">Gênero:</label>
+                <select id="genero" required>
+                    <option value="">Selecione</option>
+                    <option value="Feminino">Feminino</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Outro">Outro</option>
+                </select>
+            </div>
+            <button type="button" class="btn" onclick="calcularIMC()">Calcular IMC</button>
+        </form>
+        <div id="resultado"></div>
+        <div id="figura-imc">
+            <img id="figura" class="imagem-imc" src="img/escala-de-IMC-removebg-preview.png" alt="Resultado do IMC">
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+
+<footer>
+    <div class="footer-container">
+        <!-- Informações da Prefeitura -->
+        <div class="footer-info">
+            <img src="./img/brasao-footer.png" alt="Logo Prefeitura de Fortaleza" class="footer-logo">
+            <p>Rua São José, 01 - Centro<br>Fortaleza-CE - CEP: 60.060-170<br>Fala Fortaleza: 0800.285.0880</p>
+        </div>
+
+        <!-- Redes Sociais -->
+        <div class="footer-social">
+            <p>PREFEITURA NAS REDES SOCIAIS</p>
+            <div class="social-icons">
+                <a href="https://x.com/prefeiturapmf" target="_blank"><img src="./img/icon-x.png" alt="Twitter"></a>
+                <a href="https://www.facebook.com/PrefeituradeFortaleza/" target="_blank"><img src="./img/icone-facebook.png" alt="Facebook"></a>
+                <a href="https://www.youtube.com/user/prefeiturafortaleza" target="_blank"><img src="./img/icon-youtube.png" alt="YouTube"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 Prefeitura de Fortaleza. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
